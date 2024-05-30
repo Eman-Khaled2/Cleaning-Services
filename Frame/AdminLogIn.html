@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In</title>
+
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/Styles/froLogIn.css">
+
+
+
+
+</head>
+<body>
+
+<div class="inside-body">
+
+  <div class="container">
+    <div class="wrapper">
+      <div style="text-align: center" class="title"><span >Welcome to Eva Company</span></div>
+      <form action="/connectLog.php" class="form" method="post">
+        <div class="row">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Email" name="email" required >
+        </div>
+        <div class="row">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" name="password" required>
+        </div>
+        <div class="pass"><a href="../Frame/ConfirmPass.html">Forgot password?</a></div>
+        <div class="row button">
+          <input type="submit" value="Login">
+        </div>
+        <div class="signup-link">Not a member? <a href="../Frame/NewSignUp.html">Signup now</a></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Responsiive Admin Dashboard | CodingLab </title>
+  <link rel="stylesheet" href=/Styles/Admin.css>
+
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/Admin1.css">
+
+  <!----===== Iconscout CSS ===== -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo-details">
+    <i class='bx bxl-c-plus-plus'></i>
+    <span class="logo_name">EvaCompany</span>
+  </div>
+  <ul class="nav-links">
+
+
+
+    <li id="2" style="background: royalblue">
+      <a href="#">
+        <i class='bx bx-user' ></i>
+        <span  id="customers" class="links_name">Customers</span>
+      </a>
+    </li>
+    <li id="1">
+      <a href="#">
+        <i class='bx bx-box' ></i>
+        <span id="product" class="links_name">Product</span>
+      </a>
+    </li>
+
+    <li class="log_out">
+      <a href="/Frame/LogInUser.html">
+        <i class='bx bx-log-out'></i>
+        <span class="links_name" >Log out</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<section class="home-section"  >
+  <nav>
+    <div class="sidebar-button">
+      <i class='bx bx-menu sidebarBtn'></i>
+    </div>
+    <div class="search-box"   >
+      <input type="text" placeholder="Search...">
+      <i class='bx bx-search' ></i>
+    </div>
+    <div class="profile-details" >
+      <img src="images/profile.jpg" alt="">
+      <span class="admin_name">Prem Shahi</span>
+
+    </div>
+  </nav>
+
+  <div class="home-content" id="one" style="visibility: visible"><!--=========================-->
+    <div class="boxes" >
+      <div class="box box1">
+        <i class="uil uil-thumbs-up"></i>
+        <span class="text">Likes</span>
+        <span class="number">30,507</span>
+      </div>
+      <div class="box box2">
+        <i class="uil uil-comments"></i>
+        <span class="text">Comments</span>
+        <span class="number">15,900</span>
+      </div>
+      <div class="box box3">
+        <i class="uil uil-share"></i>
+        <span class="text">Share</span>
+        <span class="number">11,105</span>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="activity-data" id="two" style="display: flex"><!--==============================-->
+    <div class="data names">
+      <span class="data-title">Name</span>
+      <span class="data-list">Sally</span>
+      <span class="data-list">Masa</span>
+      <span class="data-list">Mahmoud</span>
+      <span class="data-list">Ali</span>
+      <span class="data-list">Osama</span>
+      <span class="data-list">Leena</span>
+      <span class="data-list">Lama</span>
+    </div>
+    <div class="data email">
+      <span class="data-title">Email</span>
+      <span class="data-list">sally@gmail.com</span>
+      <span class="data-list">masa@gmail.com</span>
+      <span class="data-list">mahmoud@gmail.com</span>
+      <span class="data-list">ali@gmail.com</span>
+      <span class="data-list">osama@gmail.com</span>
+      <span class="data-list">leena@gmail.com</span>
+      <span class="data-list">lama@gmail.com</span>
+    </div>
+    <div class="data joined">
+      <span class="data-title">Joined</span>
+      <span class="data-list">2023-10-18</span>
+      <span class="data-list">2023-12-28</span>
+      <span class="data-list">2023-05-31</span>
+      <span class="data-list">2023-03-11</span>
+      <span class="data-list">2023-02-4</span>
+      <span class="data-list">2023-10-28</span>
+      <span class="data-list">2023-03-27</span>
+    </div>
+    <div class="data type">
+      <span class="data-title">Type</span>
+      <span class="data-list">Member</span>
+      <span class="data-list">New</span>
+      <span class="data-list">New</span>
+      <span class="data-list">New</span>
+      <span class="data-list">Member</span>
+      <span class="data-list">Member</span>
+      <span class="data-list">Member</span>
+    </div>
+    <div class="data status">
+      <span class="data-title">Status</span>
+      <span class="data-list">Liked</span>
+      <span class="data-list">Shared</span>
+      <span class="data-list">Liked</span>
+      <span class="data-list">Liked</span>
+      <span class="data-list">Shared</span>
+      <span class="data-list">Commented</span>
+      <span class="data-list">Liked</span>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<!------------------------------------------------------------------------------------------>
+<div style=" visibility: collapse " class="home-content" id="three">
+  <div class="overview-boxes">
+    <div class="box">
+      <div class="right-side">
+        <div class="box-topic">Total Order</div>
+        <div class="number">40,876</div>
+        <div class="indicator">
+          <i class='bx bx-up-arrow-alt'></i>
+          <span class="text">Up from yesterday</span>
+        </div>
+      </div>
+      <i class='bx bx-cart-alt cart'></i>
+    </div>
+    <div class="box">
+      <div class="right-side">
+        <div class="box-topic">Total Sales</div>
+        <div class="number">38,876</div>
+        <div class="indicator">
+          <i class='bx bx-up-arrow-alt'></i>
+          <span class="text">Up from yesterday</span>
+        </div>
+      </div>
+      <i class='bx bxs-cart-add cart two' ></i>
+    </div>
+    <div class="box">
+      <div class="right-side">
+        <div class="box-topic">Total Profit</div>
+        <div class="number">$12,876</div>
+        <div class="indicator">
+          <i class='bx bx-up-arrow-alt'></i>
+          <span class="text">Up from yesterday</span>
+        </div>
+      </div>
+      <i class='bx bx-cart cart three' ></i>
+    </div>
+    <div class="box">
+      <div class="right-side">
+        <div class="box-topic">Total Return</div>
+        <div class="number">11,086</div>
+        <div class="indicator">
+          <i class='bx bx-down-arrow-alt down'></i>
+          <span class="text">Down From Today</span>
+        </div>
+      </div>
+      <i class='bx bxs-cart-download cart four' ></i>
+    </div>
+  </div>
+
+  <div class="sales-boxes" >
+    <div class="recent-sales box">
+      <div class="title">Sales</div>
+      <div class="sales-details">
+        <ul class="details">
+          <li class="topic">Date</li>
+          <li><a href="#">01 Jan 2023</a></li>
+          <li><a href="#">02 Feb 2023</a></li>
+          <li><a href="#">03 Mar 2023</a></li>
+          <li><a href="#">04 Apr 2023</a></li>
+          <li><a href="#">05 May 2023</a></li>
+          <li><a href="#">06 Jun 2023</a></li>
+          <li><a href="#">07 Jul 2023</a></li>
+          <li><a href="#">08 Jan 2023</a></li>
+        </ul>
+        <ul class="details">
+          <li class="topic">Customers</li>
+          <li><a href="#">Alaa</a></li>
+          <li><a href="#">Mahmoud</a></li>
+          <li><a href="#">Dalia</a></li>
+          <li><a href="#">Noor</a></li>
+          <li><a href="#">Meera</a></li>
+          <li><a href="#">Aya</a></li>
+          <li><a href="#">Eman</a></li>
+          <li><a href="#">Sally</a></li>
+          <li><a href="#">Tala</a></li>
+        </ul>
+        <ul class="details">
+          <li class="topic">Sales</li>
+          <li><a href="#">Pending</a></li>
+          <li><a href="#">Pending</a></li>
+          <li><a href="#">Returned</a></li>
+          <li><a href="#">Returned</a></li>
+          <li><a href="#">Pending</a></li>
+          <li><a href="#">Delivered</a></li>
+          <li><a href="#">Delivered</a></li>
+          <li><a href="#">Returned</a></li>
+          <li><a href="#">Pending</a></li>
+        </ul>
+        <ul class="details">
+          <li class="topic">Total</li>
+          <li><a href="#">₪190.50</a></li>
+          <li><a href="#">₪84.64</a></li>
+          <li><a href="#">₪73.12</a></li>
+          <li><a href="#">₪200.6</a></li>
+          <li><a href="#">₪50.42</a></li>
+          <li><a href="#">₪32.38</a></li>
+          <li><a href="#">₪44.78</a></li>
+          <li><a href="#">₪33.43</a></li>
+          <li><a href="#">₪22.12</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <a href=""></a>
+      </div>
+    </div>
+    <div class="top-sales box">
+      <div class="title">Top Products</div>
+      <ul class="top-sales-details">
+        <li>
+          <a href="#">
+            <img src="images/sunglasses.jpg" alt="">
+            <span class="product">Air fresher</span>
+          </a>
+          <span class="price">₪100</span>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/jeans.jpg" alt="">
+            <span class="product">Spray glass cleaner</span>
+          </a>
+          <span class="price">₪156</span>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/nike.jpg" alt="">
+            <span class="product">Floor Polish</span>
+          </a>
+          <span class="price">₪123</span>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/scarves.jpg" alt="">
+            <span class="product">Scrub Brush</span>
+          </a>
+          <span class="price">₪230</span>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/blueBag.jpg" alt="">
+            <span class="product">Rubber Gloves</span>
+          </a>
+          <span class="price">₪145</span>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/bag.jpg" alt="">
+            <span class="product">Mop & Bucket</span>
+          </a>
+          <span class="price">₪100</span>
+        <li>
+          <a href="#">
+            <img src="images/addidas.jpg" alt="">
+            <span class="product">Sponge Mop</span>
+          </a>
+          <span class="price">₪180</span>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/shirt.jpg" alt="">
+            <span class="product">Broom</span>
+          </a>
+          <span class="price">₪60</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script>
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".sidebarBtn");
+    sidebarBtn.onclick = function() {
+      sidebar.classList.toggle("active");
+      if(sidebar.classList.contains("active")){
+        sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+      }else
+        sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+    }
+  </script>
+
+  <script>
+
+    const productButton = document.getElementById('product');
+    const productButton2 = document.getElementById('1');
+    const CustomerButton = document.getElementById('customers');
+    const CustomerButton2 = document.getElementById('2');
+    const customerSection = document.getElementById('one');
+    const customerSection2 = document.getElementById('two');
+    const productSection = document.getElementById('three');
+
+    productButton.addEventListener('click', function() {
+      // Hide the customer section
+      customerSection.style.display = 'none';
+      customerSection2.style.display = 'none';
+
+      // Move the product section up by the height of the customer section
+      productSection.style.top = '-' + customerSection.offsetHeight + 'px';
+      productSection.style.visibility = 'visible';
+    });
+    productButton2.addEventListener('click', function() {
+      // Hide the customer section
+      customerSection.style.display = 'none';
+      customerSection2.style.display = 'none';
+      productButton2.style.background = 'royalblue';
+      CustomerButton2.style.background ='#2697FF';
+
+      // Move the product section up by the height of the customer section
+      productSection.style.top = '-' + customerSection.offsetHeight + 'px';
+      productSection.style.visibility = 'visible';
+    });
+
+    CustomerButton.addEventListener('click', function() {
+      // Hide the customer section
+      customerSection.style.display = 'block';
+      customerSection2.style.display = 'flex';
+
+      // Move the product section up by the height of the customer section
+      productSection.style.top = '-' + customerSection.offsetHeight + 'px';
+      productSection.style.visibility = 'collapse';
+    });
+    CustomerButton2.addEventListener('click', function() {
+      // Hide the customer section
+      customerSection.style.display = 'block';
+      customerSection2.style.display = 'flex';
+      CustomerButton2.style.background = 'royalblue';
+      productButton2.style.background ='#2697FF';
+
+      // Move the product section up by the height of the customer section
+      productSection.style.top = '-' + customerSection.offsetHeight + 'px';
+      productSection.style.visibility = 'collapse';
+    });
+
+
+  </script>
+
+</body>
+</html>

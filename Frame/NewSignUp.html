@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="/Styles/NewSign.css" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Free HTML Templates" name="keywords">
+  <meta content="Free HTML Templates" name="description">
+  <!-- Favicon -->
+  <link href="/img/favicon.ico" rel="icon">
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+<section class="container">
+  <h1><b>Registration Form</b></h1>
+
+  <form action="/connect.php" class="form" method="post" id="myForm">
+
+    <div class="input-box">
+      <input type="text" id="name" name="Name" placeholder="Enter full name"  required/>
+
+
+
+      <p class="error Name1" id="NameError1" >  User name should be without digits or symbol, try again!</p>
+      <p class="error Name2" id="NameError2">  It should be 6 digit long at least   </p>
+      <p class="error Name3" id="NameError3">  Enter your Name   </p>
+
+    </div>
+
+
+    <div class="column">
+
+      <div class="input-box">
+        <input type="text"  name="mail" id="email" placeholder="Enter email address" required />
+        <p class="error Email"id="emailError" style="width: 185px">Error with this email try again</p>
+        <p class="error Email" id="emailError2" style="width: 185px">Enter your Email</p>
+
+      </div>
+
+
+      <div class="input-box">
+        <input type="text" name="phone" id="phone"  placeholder="Enter Phone" required />
+        <p class="error Phone"  style="width: 185px"  id="phoneError1">phone should be 10 digits</p>
+        <p class="error Phone" style="width: 185px" id="phoneError2">Wrong phone number</p>
+        <p class="error Phone" style="width: 185px" id="phoneError3">Enter your phone number</p>
+
+      </div>
+
+
+
+    </div>
+
+    <div class="input-box">
+      <input type="password" name="password" id="password"  placeholder="Enter Password" required />
+      <p class="error pass" id="passwordError1">you should use lower and upper Case letters and numbers </p>
+      <p class="error pass" id="passwordError2"> Too short, it has to be 8 digits long at least </p>
+      <p class="error pass" id="passwordError3"> Enter Password</p>
+
+    </div>
+
+    <div class="input-box">
+      <input type="password" id="passwordConfirm" name="confirmPass" placeholder="Confirm Password" required />
+
+    </div>
+    <p class="error passwordConfirm" id="passwordCError1"> Mismatch with password field</p>
+    <p class="error passwordConfirm" id="passwordCError2"> Confirm Your Password </p>
+
+
+
+    <div class="input-box address">
+      <div class="column">
+        <div class="select-box" >
+          <select  name="city" id="city" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+            <option hidden>City</option>
+            <option>Nablus</option>
+            <option>Hebron</option>
+            <option>Ramallah</option>
+            <option>Bethlehem</option>
+          </select>
+        </div>
+        <div class="select-box">
+          <select name="street"   id="genDropdown" >
+            <option hidden>Street</option>
+
+          </select>
+        </div>
+      </div>
+
+    </div>
+    <div style="margin-top: 10px ; margin-left: 45px">
+      <input style="margin-left: 17px " type="radio" value="P" id="radioOne" name="account" required />
+      <label  style="font-size: 20px" for="radioOne" class="radio" chec>Personal</label>
+      <input style="margin-left: 45px "type="radio" value="C" id="radioTwo" name="account" required/>
+      <label style="font-size: 20px "for="radioTwo" class="radio">Company</label>
+
+    </div>
+
+
+
+    <button type="submit" name="submit" id="submit">Submit</button>
+    <script src="/javascript/SignUp.js"></script>
+
+    <div class="signup-link"> <a href="/Frame/LogInUser.html" >return to logIn</a></div>
+
+
+
+    <script>
+      function doHTML(list){
+        let string ="";
+        let index = 0;
+        list.forEach(element => {
+          string += `<option>${element}</option>`;
+
+        });
+        return string;
+      }
+      function dynamicdropdown(city){
+        let streetN = ["Rafidya", "Ma'amoon","Makhfiyya" , "Till"];
+        let streetH = ["44_Street", "Nablus"];
+        let streetB = ["beethlehem", "16_Street"];
+        let streetR = ["manara", "15_Street"];
+        let genDropdown = document.getElementById("genDropdown");
+        if(city=="Nablus"){
+          genDropdown.innerHTML = doHTML(streetN);
+        }
+        if(city=="Hebron"){
+          genDropdown.innerHTML = doHTML(streetH);
+        }
+        if(city=="Ramallah"){
+          genDropdown.innerHTML = doHTML(streetR);
+        }
+        if(city=="Bethlehem"){
+          genDropdown.innerHTML = doHTML(streetB);
+        }
+
+      }
+    </script>
+  </form>
+</section>
+
+</div>
+<p class="paragraph" style="font-size: 25px ;font-family: Andalus ; padding: 20px">
+  Do you want a house that radiates cleanliness, do you want to maintain your house before and after the winter season, are you an employee and do not have enough time to clean the house, the solution is Eva Company.<br><br>
+
+  Eva Company is fully prepared for the maintenance and cleaning of companies, homes, private and public institutions, garden maintenance, high-quality services from A to Z.
+
+
+</p>
+</div>
+
+</body>
+</html>
+
+

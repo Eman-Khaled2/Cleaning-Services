@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+overflow: hidden;
+}
+.inside-body{
+
+    background: url(https://albanyairconditioning.co.nz/wp-content/uploads/2019/09/AP25_Forrest_Lounge_cmyk.jpg);
+
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 900px 700px;
+    -webkit-animation: bgslide 1s ;
+    animation: bgslide 2.3s ;
+
+
+
+}
+::selection{
+    background: #4169e1;
+
+
+}
+.container{
+    max-width: 480px;
+    padding: 0px;
+    margin-left: 850px;
+
+
+
+
+}
+@-webkit-keyframes bgslide {
+    from {
+        left: -100%;
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        width: 1194px;
+        opacity: 1;
+    }
+}
+
+@keyframes bgslide {
+    from {
+        left: -100%;
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        width: 1194px;
+        opacity: 1;
+    }
+}
+.wrapper{
+    width: 100%;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+
+}
+.wrapper .title{
+    height: 200px;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper form{
+    padding: 30px 25px 25px 25px;
+}
+.wrapper form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+
+
+
+}
+form .row input:focus{
+    border-color: #4169e1;
+    box-shadow: inset 0px 0px 2px 2px #4169e1;
+}
+form .row input::placeholder{
+    color: #999;
+}
+.wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #4169e1;
+    border: 1px solid #4169e1;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper form .pass{
+    margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+    color: #4169e1;
+    font-size: 17px;
+    text-decoration: none;
+}
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+}
+.wrapper form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #4169e1;
+    border: 1px solid #4169e1;
+    cursor: pointer;
+}
+form .button input:hover{
+    background: #4169e1;
+}
+.wrapper form .signup-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.wrapper form .signup-link a{
+    color: #4169e1;
+    text-decoration: none;
+}
+form .signup-link a:hover{
+    text-decoration: underline;
+}
+
+fieldset {
+    overflow: hidden
+}
+
+.some-class {
+    float: left;
+    clear: none;
+}
+
+label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+}
+
+input[type=radio],
+input.radio {
+    float: left;
+    clear: none;
+    margin: 5px 0 0 2px;
+
+}
+.paragraph
+{
+    background-color: #FFFFFF;
+    opacity: 0.5;
+    width: 670px;
+    margin-left: 100px;
+    margin-top: -600px;
+    margin-bottom: 400px;
+    height: 400px;
+    color:  black;
+    text-shadow: black;
+
+}
+.inside-body{
+
+}
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
